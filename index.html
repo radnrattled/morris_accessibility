@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Project</title>
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
+<body>
+    <h1>Accessible Videos</h1>
+    <figure id="videoContainer">
+        <ul id="video-controls" class="controls">
+            <li><button id="playpause" type="button">Play/Pause</button></li>
+            <li><button id="stop" type="button">Stop</button></li>
+            <li class="progress">
+               <progress id="progress" value="0" min="0">
+                  <span id="progress-bar"></span>
+               </progress>
+            </li>
+            <li><button id="mute" type="button">Mute/Unmute</button></li>
+            <li><button id="subtitles" type="button" data-state="subtitles">CC</button></li>
+         </ul>
+    <video id="video" preload="auto" width="480" height="360" poster="./public/images/okja.jpg" controls>
+        <source type="video/mp4" src="./public/video/Okja.mp4"/>
+    
+        <track label="English" kind="subtitles" srclang="en" src="./captions/okja.vtt" defult>
+      </video></figure>
+      <figure id="videoContainer">
+        <ul id="video-controls" class="controls">
+            <li><button id="playpause" type="button">Play/Pause</button></li>
+            <li><button id="stop" type="button">Stop</button></li>
+            <li class="progress">
+               <progress id="progress" value="0" min="0">
+                  <span id="progress-bar"></span>
+               </progress>
+            </li>
+            <li><button id="mute" type="button">Mute/Unmute</button></li>
+            <li><button id="subtitles" type="button" data-state="subtitles">CC</button></li>
+         </ul>
+    <video id="video" preload="auto" width="480" height="360" poster="./public/images/pi.jpg" controls>
+        <source type="video/mp4" src="./public/video/Pi.mp4"/>
+    <!-- not sure why the track element isn't working I'm thinking maybe my vtt isnt set up correct? Or maybe I need to call it in the JS somehow. -->
+        <track label="English" kind="subtitles" srclang="en" src="./captions/pi.vtt" defult>
+      </video></figure>
+</body>
+<script type="module" src="scripts/main.js"></script>
+</html>

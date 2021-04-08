@@ -1,0 +1,50 @@
+body {
+    background-image:$main-bg-img;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+}
+h1{
+    font-size: 100px;
+    color:white;
+    text-align: center;
+}
+
+.controls button[data-state="subtitles"] {
+    height:85%;
+    text-indent:0;
+    font-size:16px;
+    font-size:1rem;
+    font-weight:bold;
+    color:#666;
+    background:#000;
+    border-radius:2px;
+}
+
+figure {
+    max-width:64rem;
+    width:100%;
+    max-height:30.875rem;
+    height:100%;
+    margin:1.25rem auto;
+    padding:1.051%;
+    background-color:#666;
+ }
+ .controls > * {
+    float:left;
+    width:3.90625%;
+    height:100%;
+    margin-left:0.1953125%;
+    display:block;
+ }
+
+ .controls button {
+    border:none;
+    cursor:pointer;
+    background:transparent;
+    background-size:contain;
+    background-repeat:no-repeat;
+ }
+
+ .controls button:hover, .controls button:focus {
+    opacity:0.5;
+ }
